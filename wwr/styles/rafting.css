@@ -1,0 +1,91 @@
+/*Imported Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/*Define CSS variables*/
+:root {
+  --primary-color: #336699;
+  --secondary-color: #99ccff;
+  --background-color: #ffffff;
+  --heading-font: 'Roboto', sans-serif;
+  --paragraph-font: 'Roboto', sans-serif;
+  --nav-link-color: #336699;
+  --nav-hover-color: #99ccff;
+}
+
+/*Styling headings and paragraph elements*/
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+}
+
+p {
+  font-family: var(--paragraph-font);
+  color: #333333;
+}
+
+/*Colors to the fonts*/
+a {
+  color: var(--nav-link-color);
+  text-decoration: none;
+}
+
+/*Remove underlines from the social media links*/
+nav.sociallinks a {
+  text-decoration: none;
+}
+
+/*Limit the entire width of the page*/
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/*Styling Hero Container */
+.hero {
+    position: relative;
+    width: 100%;
+    max-height: 600px;
+    overflow: hidden;
+  }
+  
+  .hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /*Opacity adjusted*/
+  }
+  
+  .hero-content h1 {
+    color: #fff;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  .hero-content article {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+    text-align: left;
+    color: #fff;
+    width: 40%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+  .hero-content article p {
+    float: right;
+    width: 50%;
+  }
+  
