@@ -22,7 +22,7 @@ aside img {
 }
 
 aside h2 {
-    position: static; /* Corrected to position: static since it should not be absolutely positioned */
+    position: absolute;
 }
 
 nav {
