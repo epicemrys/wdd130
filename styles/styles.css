@@ -1,34 +1,45 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing:border-box;
+    box-sizing: border-box;
 }
-/* Class Selectors */
-.box {
-    margin: 1rem;
-    border: 1px solid rgba(0,0,0,.1);
-    padding: 1rem;
-    background-color: #ddd;
-    color: #000;
-}
+
+/* Global Styles */
 aside {
-    width: 20em;
+    position: relative; /* Ensuring the aside element is positioned relative */
+    width: 20rem;
+    margin: 1rem;
+    border: 1px solid rgba(0, 0, 0.2);
+    padding: 1rem;
+    background-color: #eee;
+    color: #333;
     text-align: center;
 }
 
+aside img {
+    width: 200px;
+    height: auto;
+}
+
+aside h2 {
+    position: static; /* Corrected to position: static since it should not be absolutely positioned */
+}
 
 nav {
     background-color: steelblue;
     padding: 10px;
 }
+
 nav a {
     color: white;
     display: block;
     padding: 20px;
 }
+
 h1 {
     color: steelblue;
 }
+
 img {
     width: 150px;
     height: auto;
@@ -36,39 +47,24 @@ img {
     padding: 2px;
     box-shadow: 0 0 30px gray;
 }
-p{
+
+p {
     padding: 10px;
 }
+
 main {
     max-width: 840px;
 }
-aside {
-    width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgba(0, 0, 0.2); /* 1 */
-    padding: 1rem;
-    background-color: #eee;
-    color: #333;
-    text-align: center;
-}
-aside img {
-    width: 200px;
-    height: auto;
-}
-aside h2 {
-    position: absolute;
-    top: 47px;
-    left: 150px;
-}
+
+/* Additional Fixes */
 main img {
-    width: 150px;
-    height: auto;
+    float: right; /* Float profile image to the right */
 }
-main img {
-    /* float profile image to the right */
-    float: right;
+
+p {
+    padding: 0;
 }
-p { padding: 0;}
+
 footer {
     margin-top: 15px;
     border-top: 1px solid #000;
