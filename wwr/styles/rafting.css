@@ -34,6 +34,43 @@ nav.sociallinks a {
   text-decoration: none;
 }
 
+.grid-header {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 20px;
+}
+
+header {
+  background-color: var(--secondary-color);
+  padding: 20px;
+}
+
+header img {
+  margin-right: 20px;
+}
+
+nav a {
+  color: var(--nav-link-color);
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: var(--nav-hover-color);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+}
+
 /*Limit the entire width of the page*/
 body {
   max-width: 1200px;
@@ -93,3 +130,73 @@ body {
     width: 50%;
   }
   
+/* Add history content */
+.history {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+}
+
+.history h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.history p {
+  margin-bottom: 40px;
+}
+
+.history img {
+  width: 50%;
+  height: auto;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.history-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.history-content article {
+  width: 40%;
+  padding: 20px;
+}
+
+.history-content img {
+  width: 50%;
+  height: auto;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+/* Adventures Display */
+.adventures {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+figure {
+  margin: 0;
+  flex-basis: 20%; /* adjust the width of each figure */
+  text-align: center;
+}
+
+figcaption {
+  font-size: 1.2em;
+  color: var(--primary-color);
+  text-align: center;
+}
+footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.socialinks {
+  display: flex;
+  gap: 10px;
+}
