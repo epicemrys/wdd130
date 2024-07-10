@@ -90,6 +90,7 @@ body {
     width: 100%;
     height: auto;
     display: block;
+    float: right;
   }
   
   .hero-content {
