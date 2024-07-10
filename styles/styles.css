@@ -76,6 +76,7 @@ main img {
 
 .grid {
     display: grid;
+    grid-template-columns: auto auto; /* Ensures the aside and main elements are side by side */
     align-items: center;
 }
 
