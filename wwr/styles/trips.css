@@ -1,0 +1,163 @@
+/* Imported Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Define CSS variables */
+:root {
+  --primary-color: #336699;
+  --nav-link-color: #336699;
+  --nav-hover-color: #99ccff;
+}
+
+/* General Formatting */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Styling */
+header {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+header img {
+  max-height: 200px;
+}
+
+nav {
+  flex: 1;
+  text-align: right;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Main Container */
+main {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+/* Styling for each section */
+section {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+/* Styling for headings */
+h2 {
+  color: #333;
+}
+
+/* Styling for paragraphs */
+p {
+  color: #666;
+}
+
+/* Styling for the call to action link */
+a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #336699;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+a:hover {
+  background-color: #99ccff;
+}
+
+/* Styling for trip descriptions */
+article {
+  margin-bottom: 20px;
+}
+
+h3 {
+  color: #333;
+}
+
+/* Styling for trip images */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* Styling for the table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+/* Styling for table headers and data cells */
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+th {
+  background-color: #f8f9fa;
+}
+
+/* Styling for the table rows to create a striped effect */
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Styling for table rows on hover */
+tr:hover {
+  background-color: #e9ecef;
+}
+
+
+/* Footer */
+footer {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 20px;
+  text-align: right;
+}
+footer p {
+  color:#f4f4f4
+}
+
+.sociallinks a {
+  margin-left: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  header img {
+    margin-top: 10px;
+  }
+
+  nav {
+    text-align: left;
+    margin-top: 10px;
+  }
+}
