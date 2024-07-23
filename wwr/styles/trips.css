@@ -39,13 +39,10 @@ nav {
 }
 
 nav a {
-  color: white;
   text-decoration: none;
-  margin: 0 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  margin: 10px;
 }
-
+ 
 /* Main Container */
 main {
   padding: 20px;
@@ -97,7 +94,7 @@ h3 {
 
 /* Styling for trip images */
 img {
-  max-width: 100%;
+  max-width: 50%;
   height: auto;
   border-radius: 5px;
 }
@@ -133,7 +130,6 @@ tr:hover {
 /* Footer */
 footer {
   background-color: var(--primary-color);
-  color: white;
   padding: 20px;
   text-align: right;
 }

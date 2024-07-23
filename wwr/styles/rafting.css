@@ -11,7 +11,6 @@
   --nav-link-color: #336699;
   --nav-hover-color: #99ccff;
 }
-
 body {
   margin: 0;
   padding: 0;
@@ -21,7 +20,100 @@ body {
 }
 
 main {
+  padding: 0px;
+}
+
+/* Apply styles to the main sections of index.html */
+.full-width-image {
+  position: relative;
+  text-align: center;
+  margin-bottom: 20px;
+  overflow: hidden;
+  height: 100vh;
+}
+.full-width-image img {
+  width: 100vw;
+  height: auto;
+  object-fit: cover;
+}
+.full-width-image h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 2.5rem;
+}
+
+.newsletter-form h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: var(--primary-color);
+  text-align: center;
+}
+.newsletter-form {
+  text-align: center;
+  margin: 0 auto; 
+  width: 50%;
+  max-width: 500px; 
+  border: 1px solid #ccc;
   padding: 20px;
+}
+.newsletter-form form {
+  display: flex;
+  flex-direction: column;
+}
+.newsletter-form label {
+  margin: 5px 0;
+  text-align: left;
+  width: 100%;
+}
+.newsletter-form input {
+  padding: 10px;
+  text-align: center;
+}
+.newsletter-form button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin: 10px 0;
+  padding: 10px;
+
+}
+
+.call-to-action {
+  text-align: center;
+  margin-bottom: 20px;
+  margin: 0 auto; 
+  width: 50%; 
+  max-width: 500px; 
+  border: 1px solid #ccc; 
+  padding: 20px;
+}
+.call-to-action a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.grid-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1 0px;
+  margin-bottom: 20px;
+  padding: 5%;
+}
+.grid-item {
+  text-align: center;
+}
+.grid-item img {
+  max-width: 100%;
+  height: auto;
+}
+.grid-item h2 {
+  font-size: 24px;
+  color: var(--primary-color);
+  margin-bottom: 10px;
 }
 
 /*Styling headings and paragraph elements*/
@@ -40,14 +132,10 @@ a {
   text-decoration: none;
 }
 
-/*Remove underlines from the social media links*/
-nav.sociallinks a {
-  text-decoration: none;
-}
-
 header {
   background-color: var(--secondary-color);
-  padding: 20px;
+  color: white;
+  padding: 15px;
   display: flex;
   align-items: center;
 }
@@ -62,6 +150,9 @@ header img {
 nav a {
   color: var(--nav-link-color);
   transition: color 0.3s ease;
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
 }
 
 nav a:hover {
@@ -74,23 +165,25 @@ img {
 }
 
 nav {
-  display: flex;
-  gap: 20px;
+  flex: 1;
+  text-align: right;
 }
 
 /* Hero Container Styling */
 .hero {
   position: relative;
-  width: 100%;
+  width: 98%;
   max-height: auto;
   overflow: hidden;
+  padding: 10px
 }
 
 .hero img {
-  width: 100%;
+  max-width: 30%;
   height: auto;
   display: block;
   float: right;
+  padding: 10px;
 }
 
 .hero-content {
@@ -99,16 +192,9 @@ nav {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  padding: 20px;
   background-color: rgba(0, 0, 0, 0.5); /*Opacity adjusted*/
   color: #fff;
 }
-
-.hero-content h1 {
-  font-size: 2.5em;
-  margin-bottom: 20px;
-}
-
 .hero-content article {
   text-align: left;
   width: 60%;
@@ -120,13 +206,14 @@ nav {
 
 /* Add history content */
 .history {
-  padding: 40px;
+  padding: 10px;
   text-align: center;
+  flex-direction: column;
 }
 
 .history h2 {
   font-size: 2em;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   color: var(--primary-color);
   text-align: center;
 }
@@ -136,24 +223,12 @@ nav {
 }
 
 .history img {
-  max-width: 100%;
+  max-width: 30%;
   height: auto;
   margin: 20px;
   border-radius: 10px;
 }
 
-.history-content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-.history-content article {
-  width: 48%;
-  padding: 20px;
-}
-
-/* Adventures Display */
 /* Adventures Display */
 .adventures {
   display: flex;
@@ -185,14 +260,35 @@ nav {
 }
 
 footer {
-  display: flex;
-  justify-content: space-between;
   padding: 20px;
   background-color: var(--secondary-color);
   color: #fff;
+  text-align: right;
 }
 
-.sociallinks {
-  display: flex;
-  gap: 10px;
+
+.sociallinks a {
+  margin-left: 10px;
+}
+
+/*Remove underlines from the social media links*/
+nav.sociallinks a {
+  text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  header img {
+    margin-top: 10px;
+  }
+
+  nav {
+    text-align: left;
+    margin-top: 10px;
+  }
 }
